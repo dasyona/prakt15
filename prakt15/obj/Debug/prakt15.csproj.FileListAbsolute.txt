@@ -8,3 +8,13 @@ C:\Users\305-3\Desktop\Канаева ПР-21\prakt15\obj\Debug\prakt15.csproj.G
 C:\Users\305-3\Desktop\Канаева ПР-21\prakt15\obj\Debug\prakt15.csproj.CoreCompileInputs.cache
 C:\Users\305-3\Desktop\Канаева ПР-21\prakt15\obj\Debug\prakt15.exe
 C:\Users\305-3\Desktop\Канаева ПР-21\prakt15\obj\Debug\prakt15.pdb
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.csproj.AssemblyReference.cache
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.Form1.resources
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.Properties.Resources.resources
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.csproj.GenerateResource.cache
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.csproj.CoreCompileInputs.cache
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.exe
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\obj\Debug\prakt15.pdb
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\bin\Debug\prakt15.exe.config
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\bin\Debug\prakt15.exe
+C:\Users\home\OneDrive\Desktop\prakt15-main\prakt15\bin\Debug\prakt15.pdb

@@ -1,33 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace prakt15
 {
-    class StudentGroup
+    
+    public class StudentGroup
     {
-        private List<Student> students;
+        private List<Student> students = new List<Student>();
 
-        public StudentGroup()
-        {
-            students = new List<Student>();
-        }
-
-
-        public int Count => students.Count;
-
-     
+        // Добавление одного студента
         public void AddStudent(Student student)
         {
-            if (student != null)
-            {
-                students.Add(student);
-            }
+            students.Add(student);
         }
 
-        public bool RemoveStudent(int index)
+        // Удаление студента по индексу
+        public bool RemoveAt(int index)
         {
             if (index >= 0 && index < students.Count)
             {
@@ -37,68 +26,34 @@ namespace prakt15
             return false;
         }
 
-
-        public bool RemoveStudent(Student student)
+        // Поиск по фамилии
+        public List<Student> FindByLastName(string lastName)
         {
-            return students.Remove(student);
+            return students.Where(s => s.LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
-
-        public List<Student> SearchByLastName(string lastName)
-        {
-            return students.Where(s => s.LastName.ToLower().Contains(lastName.ToLower())).ToList();
-        }
-
-   
-        public List<Student> SearchByFirstName(string firstName)
-        {
-            return students.Where(s => s.FirstName.ToLower().Contains(firstName.ToLower())).ToList();
-        }
-
-        public List<Student> SearchByPhone(string phone)
-        {
-            return students.Where(s => s.PhoneNumber.Contains(phone)).ToList();
-        }
-
-        public List<Student> SearchByBirthDate(DateTime birthDate)
+        // Поиск по дате рождения
+        public List<Student> FindByBirthDate(DateTime birthDate)
         {
             return students.Where(s => s.BirthDate.Date == birthDate.Date).ToList();
         }
 
-   
-        public void SortByLastName()
+        // Сортировка по фамилии
+        public List<Student> SortByLastName()
         {
-            students = students.OrderBy(s => s.LastName).ThenBy(s => s.FirstName).ToList();
+            return students.OrderBy(s => s.LastName).ToList();
         }
 
-  
-        public void SortByFirstName()
+        // Сортировка по дате рождения
+        public List<Student> SortByBirthDate()
         {
-            students = students.OrderBy(s => s.FirstName).ThenBy(s => s.LastName).ToList();
+            return students.OrderBy(s => s.BirthDate).ToList();
         }
 
-     
-        public void SortByBirthDate()
-        {
-            students = students.OrderBy(s => s.BirthDate).ToList();
-        }
-
-
-        public void SortByPhone()
-        {
-            students = students.OrderBy(s => s.PhoneNumber).ToList();
-        }
-
-      
+        // Получить всех студентов
         public List<Student> GetAllStudents()
         {
-            return new List<Student>(students);
-        }
-
-
-        public void Clear()
-        {
-            students.Clear();
+            return students.ToList();
         }
     }
 }
